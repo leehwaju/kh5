@@ -3,43 +3,223 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+<style type="text/css">
+
+/* 메인 메뉴 - 1depth  */
+
+ul.nav{	
+	/* ul태그의 기본 리스트스타일(disc) 제거  */
+	list-style-type: none;
+	
+	/* ul태그의 기본 여백 제거  */
+	padding: 0;
+	margin: 0;
+}
+
+
+/* 메인 메뉴의 항목 */
+ul.nav > li{
+	/* 수평으로 일렬 배치하기  */
+	float: left;
+	
+	/* 메뉴 위치 설정 */
+	position:relative;
+	left: 1500px;
+	top:30px;
+	
+	/* 항목 크기 변경 (배경색포함)  */
+/* 	padding: 10px 5px; */
+	
+	/* 항목 크기 변경 (배경색 미포함)  */
+	/* -> 항목들의 간격이 멀어짐  */
+/* 	margin: 10px 5px; */
+	
+	/* 줄간격을 이용한 높이 조절 (배경색 포함) */
+	line-height: 40px;
+	
+	/* 테두리를 이용한 메뉴 항목 구분  */
+/* 	border: 1px solid red; */
+	border-right: 1px solid #fff;
+	
+	/* 서브메뉴 (absolute요소) 의 위치 기준점으로 설정  */
+	position: relative;
+}
+
+/* 메인 메뉴의 항목 링크 텍스트  */
+ul.nav > li> a {
+
+	/* 글자 색상 */
+	color: black;
+	
+	/* 글자 꾸밈선 제거 (underline 제거)  */
+	text-decoration: none;
+	
+	
+	
+	
+	font-size: 15px; /* 글자 크기 */
+	font-weight: bold; /* 글자 굵게 */
+	font-family: "굴림"; /* 글꼴 */
+	
+	/* 내부 여백  */
+	/* -> 링크 클릭이 가능한 영역  */
+	padding: 10px 15px;
+	
+	
+	/* 외부 여백  */
+	/* ->링크 클릭이 불가능한 영역  */
+	margin: 0 3px;
+}
+
+/* 메인 메뉴의 항목 텍스트에 마우스를 올렸을 때 */
+ul.nav> li> a:hover {
+	color : tomato;
+}
+/* --------------------------------------------------------  */
+
+
+/* 서브 메뉴  */
+ul.nav> li> ul {
+
+	/* HTML계층구조에서 빼내는 설정  */
+	position: absolute;
+	
+	/* ul태그의 기본 리스트 스타일 (circle) 제거  */
+	list-style-type: none;
+	
+	/* ul 태그의 기본 여백 제거  */
+	padding: 0;
+	margin: 0;
+	
+	/* 서브 메뉴 영역의 너비  */
+	width: 200px;
+	
+	
+}
+
+
+/* 서브 메뉴의 항목  */
+
+ul.nav > li > ul > li {
+	
+	
+/* 내부 여백 - 항목 크기 키우기 */	
+/* 	padding: 10px;  */
+
+	/* 들여쓰기 효과  */
+	padding-left: 20px;
+	
+	/* 숨기기  */
+	/* display: none; */
+	
+	
+	/* 평소에 보이지 않도록 설정  */
+	height: 0; /* 컨텐츠 영역의 높이 제거  */
+	font-size: 0; /* 글자 크기 제거  */
+	line-height: 0;  /* 줄 간격 제거 */
+}
+
+/* 메인메뉴 항목에 마우스를 올릴경우
+	서브메뉴가 보이도록 설정하기  */
+ul.nav > li:hover > ul > li {
+	height: 40px; /* 컨텐츠 영역의 높이 복원  */
+	font-size: 15px; /* 글자 크기 복원  */
+	line-height: 40px;  /* 줄간격 복원 */
+}
+
+/* 서브메뉴의 항목 텍스트  */
+ul.nav > li> ul > li > a {
+	/* 배경색 지정  */
+	background: white;;
+	
+	/* 글자색 지정  */
+	color: gray;
+	
+	/* 글자 꾸밈선 제거 (underline 제거) */
+	text-decoration: none;
+	
+	/* 부모 <li> 태그 크기만큼 영역을 차지하도록 설정  */
+	display: block;
+	
+	
+}
+
+/* 서브메뉴의 항목 텍스트에 마우스가 올라갔을 때   */
+ul.nav > li > ul > li > a:hover{
+	/* 글자색 변경  */
+	color: black;
+	
+	/* 배경색 변경 */
+	background: #E2E2E2;
+	
+}
+
+#log{
+	background-image: url(file:///C:/Users/J/git/repository2/Front/WebContent/resources/image/im.jpg);
+  width: 1600px;
+  height: 200px;
+ position: relative;
+ left: 150px;
+
+}
+</style>
+
+
+
 </head>
 <body>
-<h1>PR ROOM</h1>
-<br>
 
-<button type="button" onclick="location.href='#'">홈</button>
+
+
+
+
+
+
+
+
+
+
+
+<h1 id=log style= "text-align: center; text-decoration: underline; line-height: 180px; color: white;">PR ROOM</h1>
+
+<!-- # -> 자시 자신 페이지   -->
 <ul class="nav">
 	<li>
-		<a href="#">PR ROOM</a>
+		<a href="#">HOME</a>					
+	</li>
+
+	<li>
+		<a href="#">RR ROOM&nbsp;&nbsp;&nbsp;&nbsp;> </a>
 		<ul>
 			<li><a href="#">SUMMARY</a></li>
 			<li><a href="#">COMPLEX</a></li>
 			<li><a href="#">UNIT PLAN</a></li>
 			<li><a href="#">PR ROOM</a></li>
-			<li><a href="#">REGISTER</a></li>			
-		</ul>	
+			<li><a href="#">REGISTAR</a></li>			
+		</ul>
 	</li>
 	
 	<li>
-		<a href="#">언론보도</a>
+		<a href="#">언론보도&nbsp;&nbsp;&nbsp;&nbsp;∨</a>
 		<ul>
 			<li><a href="#">언론보도</a></li>
 			<li><a href="#">홍보영상</a></li>
 			<li><a href="#">공지사항</a></li>
-			<li><a href="#">이벤트당첨자</a></li>		
+			<li><a href="#">이벤트 당첨자</a></li>					
 		</ul>
 	</li>
 	
-	<br>
-	
-<h1>언론보도</h1>
-
-<hr>
-
-
-	
-	
 </ul>
+<br>
+<br>
+<h1>언론보도</h1>
+<hr>
+<div style="font-size: 12px;">
+<p>가장 바다다운 바다를 누리는 하이엔드 오션 부티크 - <span style="font-weight: bold">파나크 오퍼레이티드 바이 소노</span></p>
+</div>
+
+
+
 </body>
 </html>
