@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+.navi{
+	position: absolute;	
+	top: 109px;
+	left: 0px;
+	right: 0;
+	margin: auto;
+	height: 39px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.nave > ul {
+	position: absoulte;
+	width: 1100px;
+	height: 39px;
+	top: 0;
+	left: 50%;
+	margint-left: -473px;
+}
+
+/* 메뉴 메인*/
+.navi .depth1 {
+	float: left;
+	list-style-type: none;
+	position: relative;
+/* 	text-align: center; */
+	margin: 0;
+	padding: 0 30px;
+	top: -8px;
+	left: 291px;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 16px;
+/* 	line-height: 39px; */
+	color: black;
+	display: block;
+}
+
+/* 메뉴 메인에 마우스 올렸을 때 */
+.navi > ul > li:hover{
+	position: relative;
+	font-size: 16px;
+	margin: 0;
+	padding: 0 30px;
+	line-height: 39px;
+	
+}
+
+/* 메인메뉴 글자에 마우스 올렸을때 */
+.navi > ul > li > a:hover {
+	color: #fff;
+	background: #716156;
+	transition: all 0.3s ease-out;
+}
+
+
+/* 하위메뉴 */
+.navi > ul > li {
+	list-style-type: none;
+}
+
+
+.navi > ul > li > ul {
+/* 	font-size: 0; */
+/* 	list-style-type: none; */
+	min-height: 140px;
+	margin-top: 16px;
+	opacity: 0;
+	transform: translateY(20px);
+	display: none;
+}
+
+.navi > ul:hover > li > ul > li > a {
+	font-size: 13px;
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- 메인 메뉴 시작 -->
+<div class="main">
+<h1 id="logo">
+	<a href="#">PANAQ</a>
+</h1>
+
+<div id="vr_tour">360 vr tour</div>
+
+<div id="number">
+	<div id="number_1">1877.2111</div>
+</div>
+
+</div>
+
+
+
+<!-- 왼쪽 사이드메뉴 -->
+<div id="left-q" style="width: 80px;">
+	<div id="left-logo" style="opacity: 1;">
+		<a href="#"><img src="http://xn--910bp71dtzb.com/img/common/left-logo01.png"></a>
+	</div>
+	
+	<div id="left-logo2" style="opacity: 0;">
+		<a href="#"><img src="http://xn--910bp71dtzb.com/img/common/left-logo02.png"></a>
+	</div>
+	
+	<ul id="left-q03">
+		<li>
+			<div class="left-q03bg" style="width: 0%;"></div>
+			<a href="#"><img src="http://xn--910bp71dtzb.com/img/common/left-icon01.png"></a>
+			<p style="left: 95px; opacity: 0;">
+				<a href="#">홈으로<br><span>GOTO HOME</span></a>
+			</p>
+			<div class="left-arrow">
+				<a href="#"><img src="http://xn--910bp71dtzb.com/img/common/left-arrow.png"></a>
+			</div>
+		</li>
+		
+		<li>
+		<div class="left-q03bg"></div>
+		<a href="#"><img src="http://xn--910bp71dtzb.com/img/common/left-icon02.png"></a>
+		<p style="left: 95px; opacity: 0;">
+			<a href="#">관심고객등록<br><span>REGISTER</span></a>
+		</p>
+		<div class="left-arrow">
+			<a href="#"><img src="http://xn--910bp71dtzb.com/img/common/left-arrow.png"></a>
+		</div>
+		</li>
+		
+		<li>
+			<div class="left-q03bg"></div>
+			<a href="#"><img src="http://xn--910bp71dtzb.com/img/common/left-icon03.png"></a>
+			<p style="left: 95px; opacity: 0;">
+				<a href="#">입지환경<br><span>LOCATION</span></a>
+			</p>
+			<div class="left-arrow">
+				<a href="#"><img src="http://xn--910bp71dtzb.com/img/common/left-arrow.png"></a>
+			</div>
+		</li>
+	</ul>
+	
+	<div id="left-menu">
+		<img src="http://xn--910bp71dtzb.com/img/common/left-menu01.png">
+		<p style="opacity: 0;">전체메뉴 열기<br><span>SITE MAP</span></p>
+	</div>
+	
+	<div id="scroll">
+		<p>SCROLL</p>
+		<div id="line2"></div>
+		<div id="line" style="height: 50.346px; overflow: hidden;"></div>
+	</div>
+</div>
+
+
+<!--  -->
+
+
+
+
+
+</body>
+</html>

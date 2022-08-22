@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<link rel="stylesheet" type="text/css" href="../proj/style_2.css?after">
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".sub-footer").load("footer.html");
+	$(".main").load("same.html");
+	
+})
+
+</script>
+
+<style type="text/css">
+#snb .ov ul { visibility: hidden; }
+</style>
+
+</head>
+<body>
+
+
+
+<div class="main"></div>
+
+
+<!-- 이미지+summary -->
+<div id="sub-top01">
+	<div class="sub-img"></div>
+	<div id="sub-toptxt" style="width: 200px">
+	SUMMARY
+	<div id="sub-topline"></div>
+	</div>
+</div>
+
+
+<!-- 중심 -->
+<div class="all_wrap">
+	<div id="sub_container">
+		<!-- 가운데 홈 아이콘 확장 메뉴 시작 -->
+		<div id="snb_wrap">
+			<ul id="snb">
+				<li class="home">
+					<a href="#"><img src="http://xn--910bp71dtzb.com/img/common/home.png"></a>
+				</li>
+				
+				<li class="snb-line"></li>
+				
+				<li class="ov">
+					<a href="#">SUMMARY</a>
+					<ul>
+						<li><a href="#">SUMMARY</a></li>
+						<li><a href="#">COMPLEX</a></li>
+						<li><a href="#">UNIT PLAN</a></li>
+						<li><a href="#">PR ROOM</a></li>
+						<li><a href="#">REGISTER</a></li>
+					</ul>
+				</li>
+				
+				<li class="ov">
+					<a href="#">사업개요</a>
+					<ul>
+						<li><a href="#">사업개요</a></li>
+						<li><a href="#">브랜드 소개</a></li>
+						<li><a href="#">입지환경</a></li>
+						<li><a href="#">오시는 길</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- 홈 아이콘 확장메뉴 끝 -->
+		
+		<!-- 사업개요 시작 -->
+		<div id="sub_tit"></div>
+			<h2 style="font-size: 35px; font-weight: normal;">사업개요</h2>
+			<div class="sub_line"></div>
+			<p class="sub_tit2">
+				가장 바다다운 바다를 누리는 하이엔드 오션 부티크 -
+				<span>파나크 오퍼레이티드 바이 소노</span>
+			</p>
+			<!-- 사업개요 끝 -->
+		
+		<!-- 가운데 큰 이미지 삽입 -->
+		<div id="sub_page">
+			<img src="http://xn--910bp71dtzb.com/sub/planning.jpg">
+		</div>
+	</div>
+</div>
+
+
+
+<div class="sub-footer"></div>
+
+
+</body>
+
+<script type="text/javascript">
+
+//###### dom ready
+$(function() {
+
+    //- sub menu
+    $(".ov").on({
+        mouseenter: function(e) {
+            $(this).find("ul").css({visibility:"visible"});
+        },
+        mouseleave: function(e) {
+            $(this).find("ul").css({visibility:"hidden"});
+        },
+    });
+});
+
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
