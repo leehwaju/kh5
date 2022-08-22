@@ -1,0 +1,324 @@
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, 
+acronym, address, big, cite, code, del, dfn, em, font, 
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, 
+tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, 
+label, legend, article, aside, details, figcaption, figure, dialog, 
+footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+   
+	text-decoration: none; /* 추가 list>li 밑줄 제거 */
+	
+}
+
+ul li {
+	list-style: none;
+
+}
+
+
+.navi {
+    position: absolute;
+    width: calc(100% - 80px);
+    height: 150px;
+    right: 0px;
+    top: 0px;
+    z-index: 9999;
+    border: none;
+/*     background: orange; */
+}  
+
+ 
+#logo {
+    width: 124px;
+    height: 46px;
+    transform: translateY(0px);
+    position: absolute;
+    top: 34px;
+    left: 0;
+    right: 0;
+    margin: auto;
+/*     background : skyblue; */
+}
+
+
+#insta {
+	
+    width: 116px;
+    height: 109px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 1px solid rgba(132,132,132,0.33);
+}
+
+
+.list{
+	display: flex; /*추가*/
+/* 	background : tomato; */
+    width: 100%;
+    position: absolute;
+    top: 109px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 39px;
+    border-top: 1px solid rgba(132,132,132,0.33); 
+    border-bottom: 1px solid rgba(132,132,132,0.33);
+}
+
+ .list > ul {
+	display: flex;	/*추가*/
+/* 	background: yellow; */
+	width : 1020px; /* 1100px*/
+	
+	height: 39px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -364px;
+}  
+
+
+
+.list > ul > li {
+	
+/* 	background : white; */
+/* 	display: flex; */
+	position:relative; 
+	float:left; 
+	text-align:center; 
+	margin: 0 10px;  
+	letter-spacing: -1px; /*추가*/
+}
+
+.list .n1 {
+    position: relative;
+    display: block;
+    color: #4a4a4a;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    line-height: 39px;
+    margin: 0px;
+    padding: 0px 30px;
+}
+
+
+.tel {
+
+    width: 224px;
+	height:109px;
+    float: right;
+    position: relative;
+
+}
+
+
+.tel > ul  {
+/* 	background : maroon; */
+    width: 224px;
+	height:109px;
+    float: right;
+    position: relative;
+    border-left: 1px solid rgba(132,132,132,0.33);
+}
+
+
+/* 메뉴 */
+/*  -----------------------------------------------------------------------------*/
+
+#left { 
+	width: 80px;
+	height: 100%;
+	background: black;
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	 overflow: hidden;
+}
+
+#left-logo {
+    width: 18px;
+    height: 78px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 36px 31px;
+    background-color: #716156;
+   
+}
+
+
+
+#left03 {
+    width: 100%;
+    height: 240px;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    
+}
+
+#left03 > li {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-bottom: 1px solid  rgba(132,132,132,0.33);
+    cursor: pointer;
+    text-align: center; /*추가, 아이콘 가운데정렬*/
+    
+}
+
+
+left-menu {
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+
+
+
+	
+
+
+
+
+.section {
+	width:100%;
+	height: 714px;
+	background-image: url("http://xn--910bp71dtzb.com/img/sec05-bg.jpg");
+	background-size: cover;
+	  
+/*     position: relative; */ /* 사이드바 사라짐 */
+    overflow: hidden;
+    text-align: center;
+}
+
+
+
+
+
+
+#section_ul {
+    width: 1100px;
+    height: 493px;
+    position: absolute;
+    top: 34%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+} 
+
+#section_ul > li:nth-child(1) {
+    margin-left: 200px;
+}
+
+#section_ul > li {
+	margin-top:140px;
+    width: 300px;
+    height: 393px; /* 493px */
+    background-color: #fff;
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+  
+}
+.section > ul > li > h3> span{
+	font-size: 22px;
+}
+.section > ul > li > h3{
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 30px;
+  	font-weight :600;
+    line-height: 40px;
+    margin-top: 30px;
+
+}
+.section > ul > li > p {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 30px;
+    color: rgba(0,0,0,0.77);
+    font-weight: 600;
+    margin-top: 38px;
+}
+
+.section_icon {
+    width: 34px;
+    height: 35px;
+    margin-bottom: 4px;
+    margin-left: 124px;
+}
+
+
+.section_icon > li > div {
+    font-size: 13px;
+    color: 000;
+    font-weight: 600;
+    margin-top: 63px;
+}
+
+
+
+
+
+
+.footer {
+	position: relative;
+	width:cal(100% -80px);
+	height: 163px;
+	margin-left: 0;
+	right: 0;
+	left:0;
+	    
+}
+
+
+
+.footer > .footer_left {
+	position: absolute;
+	left:0;
+
+
+}
+
+
+
+.footer > .footer_right {
+	position: absolute;
+	right:0;
+	
+	
+}
+
+
+
+
+
+
+
